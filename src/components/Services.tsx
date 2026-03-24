@@ -183,7 +183,7 @@ export default function Services() {
           >
             <Image
               src="/images/service-utility.jpg"
-              alt="Underground utility pipe installation in excavated trench for infrastructure project"
+              alt="HDPE pipe being installed via directional drilling in excavated trench at underground utility construction site"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
               loading="lazy"

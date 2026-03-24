@@ -83,7 +83,7 @@ export default function About() {
               <div className="rounded-2xl overflow-hidden relative group">
                 <Image
                   src="/images/about-crew.jpg"
-                  alt="HD Global Group experienced construction crew members in safety equipment at project site"
+                  alt="HD Global Group field crew operating Ditch Witch horizontal directional drilling machine for underground fiber optic installation"
                   width={700}
                   height={467}
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"

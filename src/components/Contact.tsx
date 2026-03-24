@@ -50,6 +50,27 @@ export default function Contact() {
             <span className="text-primary-container">project?</span>
           </h2>
           <div className="amber-bar mx-auto" aria-hidden="true" />
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8 mb-2">
+            <a
+              href="tel:+19367180696"
+              className="flex items-center gap-2 text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+            >
+              <span className="material-symbols-outlined text-xl" aria-hidden="true">
+                phone
+              </span>
+              <span className="text-lg font-semibold">(936) 718-0696</span>
+            </a>
+            <span className="hidden sm:block text-on-surface-variant/30">|</span>
+            <a
+              href="mailto:info@hdglobalgroup.us"
+              className="flex items-center gap-2 text-on-surface-variant hover:text-primary-container transition-colors duration-300"
+            >
+              <span className="material-symbols-outlined text-xl" aria-hidden="true">
+                mail
+              </span>
+              <span className="text-lg font-semibold">info@hdglobalgroup.us</span>
+            </a>
+          </div>
           <p className="text-on-surface-variant text-lg max-w-2xl mx-auto mt-6">
             Whether you need horizontal directional drilling, fiber optic
             installation, underground utility support, or full project

@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://hdglobalgroup.com/sitemap.xml
+Sitemap: https://hdglobalgroup.us/sitemap.xml
 
 User-agent: Googlebot
 Allow: /

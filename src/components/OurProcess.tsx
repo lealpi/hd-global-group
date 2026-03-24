@@ -98,7 +98,7 @@ export default function OurProcess() {
             <div className="rounded-2xl overflow-hidden relative group h-full min-h-[350px]">
               <Image
                 src="/images/process-site.jpg"
-                alt="Anchor boring rig performing directional drilling operations at underground construction site"
+                alt="HD Global Group field worker using Radiodetection F5+ utility locator on active horizontal directional drilling jobsite"
                 fill
                 className="object-cover brightness-75 contrast-110 group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"

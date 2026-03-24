@@ -14,14 +14,14 @@ const structuredData = {
   "@graph": [
     {
       "@type": ["Organization", "LocalBusiness"],
-      "@id": "https://hdglobalgroup.com/#organization",
+      "@id": "https://hdglobalgroup.us/#organization",
       name: "HD Global Group",
-      url: "https://hdglobalgroup.com",
-      logo: "https://hdglobalgroup.com/logo.png",
+      url: "https://hdglobalgroup.us",
+      logo: "https://hdglobalgroup.us/logo.png",
       description:
         "Expert underground construction company specializing in HDD drilling, fiber optic installation, project management, and underground utility support across the United States.",
-      telephone: "(555) 000-0000",
-      email: "info@hdglobalgroup.com",
+      telephone: "+1 (936) 718-0696",
+      email: "info@hdglobalgroup.us",
       address: {
         "@type": "PostalAddress",
         addressCountry: "US",
@@ -53,10 +53,10 @@ const structuredData = {
     {
       "@type": "WebSite",
       name: "HD Global Group",
-      url: "https://hdglobalgroup.com",
+      url: "https://hdglobalgroup.us",
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://hdglobalgroup.com/?s={search_term_string}",
+        target: "https://hdglobalgroup.us/?s={search_term_string}",
         "query-input": "required name=search_term_string",
       },
     },
@@ -67,32 +67,32 @@ const structuredData = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://hdglobalgroup.com/",
+          item: "https://hdglobalgroup.us/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Services",
-          item: "https://hdglobalgroup.com/#services",
+          item: "https://hdglobalgroup.us/#services",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: "About",
-          item: "https://hdglobalgroup.com/#about",
+          item: "https://hdglobalgroup.us/#about",
         },
         {
           "@type": "ListItem",
           position: 4,
           name: "Contact",
-          item: "https://hdglobalgroup.com/#contact",
+          item: "https://hdglobalgroup.us/#contact",
         },
       ],
     },
     {
       "@type": "Service",
       serviceType: "Horizontal Directional Drilling",
-      provider: { "@id": "https://hdglobalgroup.com/#organization" },
+      provider: { "@id": "https://hdglobalgroup.us/#organization" },
       description:
         "Efficient and precise HDD solutions for underground utility installation with minimal surface disruption and maximum field performance.",
       areaServed: { "@type": "Country", name: "United States" },
@@ -113,7 +113,7 @@ const structuredData = {
     {
       "@type": "Service",
       serviceType: "Fiber Optic Installation",
-      provider: { "@id": "https://hdglobalgroup.com/#organization" },
+      provider: { "@id": "https://hdglobalgroup.us/#organization" },
       description:
         "Underground fiber optic conduit placement and infrastructure support with strong production standards and dependable field coordination.",
       areaServed: { "@type": "Country", name: "United States" },
@@ -134,7 +134,7 @@ const structuredData = {
     {
       "@type": "Service",
       serviceType: "Project Management & Field Supervision",
-      provider: { "@id": "https://hdglobalgroup.com/#organization" },
+      provider: { "@id": "https://hdglobalgroup.us/#organization" },
       description:
         "Full project support through planning, coordination, daily oversight, and field execution for underground construction projects.",
       areaServed: { "@type": "Country", name: "United States" },
@@ -155,7 +155,7 @@ const structuredData = {
     {
       "@type": "Service",
       serviceType: "Underground Utility Support",
-      provider: { "@id": "https://hdglobalgroup.com/#organization" },
+      provider: { "@id": "https://hdglobalgroup.us/#organization" },
       description:
         "Underground utility-related operations with experienced crews, field awareness, and execution under real jobsite conditions.",
       areaServed: { "@type": "Country", name: "United States" },

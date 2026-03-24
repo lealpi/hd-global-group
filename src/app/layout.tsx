@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hdglobalgroup.com"),
+  metadataBase: new URL("https://hdglobalgroup.us"),
   title: {
     default:
       "HD Global Group | Underground Construction & HDD Drilling Services",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://hdglobalgroup.com",
+    url: "https://hdglobalgroup.us",
     siteName: "HD Global Group",
     title:
       "HD Global Group | Underground Construction & HDD Drilling Services",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://hdglobalgroup.com",
+    canonical: "https://hdglobalgroup.us",
   },
   other: {
     "geo.region": "US",

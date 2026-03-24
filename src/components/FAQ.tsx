@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "How can I request a quote from HD Global Group?",
     answer:
-      "You can request a free quote by filling out the contact form on our website or calling us directly at (555) 000-0000. Provide your project scope, location, timeline, and any relevant engineering plans or specifications. Our estimating team will review your requirements and respond with a detailed proposal within 24 business hours. There is no cost or obligation for initial project consultations.",
+      "You can request a free quote by filling out the contact form on our website or calling us directly at (936) 718-0696. Provide your project scope, location, timeline, and any relevant engineering plans or specifications. Our estimating team will review your requirements and respond with a detailed proposal within 24 business hours. There is no cost or obligation for initial project consultations.",
   },
   {
     question: "Is HD Global Group licensed and insured?",
