@@ -1,0 +1,107 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+export default function Hero() {
+  return (
+    <section
+      id="hero"
+      aria-labelledby="hero-heading"
+      className="relative min-h-screen flex items-center overflow-hidden bg-surface-container-lowest"
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVsV5vbHFbpA6K8UjTbwqveNdS8eYEqDgjKCfYyRKkeVcrHGzpoPfL0ZSzjNvWIDVkz5wN2B4MjXw7CkN3m3ACUf0fEoYEOUtCXZCfkW3icCmTvxTIm0aRfAp_uFVpFnoh8NG5F_dIRv_7XY_cp_oBk7smP_2j8BJqS9Fd5yFXpF6ScK-Zs_IyFm441PJ7xVynUqsJp5EEA5lXttkUMbl9b0STd_fCSYSKAXSRgcf-3BEdmVcfp1lsx3UPlSCFhd6IhwZLBkaSL_S0"
+          alt="Powerful horizontal directional drilling HDD rig at sunset on a construction site with cinematic lighting"
+          className="w-full h-full object-cover mix-blend-luminosity brightness-50 contrast-125"
+          loading="eager"
+          width={1920}
+          height={1080}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent" />
+      </div>
+
+      {/* Grain texture */}
+      <div className="grain-texture absolute inset-0" aria-hidden="true" />
+
+      {/* Content — left aligned */}
+      <div className="relative z-10 container mx-auto px-8 pt-20">
+        <div className="max-w-5xl">
+          {/* Overline */}
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="uppercase tracking-[0.2em] text-primary-fixed-dim font-bold mb-6 block text-sm"
+          >
+            Precision Engineering. Unrivaled Infrastructure.
+          </motion.span>
+
+          {/* Main Headline */}
+          <motion.h1
+            id="hero-heading"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="text-6xl sm:text-7xl md:text-[128px] font-black text-on-surface text-monolith mb-8 uppercase"
+          >
+            BUILDING BELOW THE{" "}
+            <span className="text-primary-container">SURFACE</span>
+          </motion.h1>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed mb-12"
+          >
+            Reliable underground construction solutions built for performance,
+            safety, and execution. Expert HDD drilling, fiber optic
+            installation, and utility services — nationwide.
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="flex flex-col md:flex-row gap-6"
+          >
+            <a
+              href="#services"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .querySelector("#services")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="btn-primary px-10 py-5 rounded-xl text-lg uppercase tracking-tight flex items-center gap-3 group"
+            >
+              Our Services
+              <span
+                className="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                aria-hidden="true"
+              >
+                arrow_forward
+              </span>
+            </a>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .querySelector("#contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="btn-ghost px-10 py-5 rounded-xl text-lg uppercase tracking-tight text-center"
+            >
+              Request a Quote
+            </a>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}

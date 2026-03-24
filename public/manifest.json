@@ -1,0 +1,13 @@
+{
+  "name": "HD Global Group",
+  "short_name": "HD Global",
+  "description": "Underground Construction & HDD Drilling Services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#131319",
+  "theme_color": "#131319",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

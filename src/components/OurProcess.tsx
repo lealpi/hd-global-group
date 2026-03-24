@@ -1,0 +1,156 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const steps = [
+  {
+    number: "01",
+    icon: "search",
+    title: "Discovery & Planning",
+    description:
+      "We begin every underground construction project with a thorough assessment of scope, site conditions, and client requirements. Our team reviews engineering plans, identifies potential conflicts with existing utilities, and develops a detailed execution strategy that accounts for safety, efficiency, and regulatory compliance.",
+  },
+  {
+    number: "02",
+    icon: "construction",
+    title: "Mobilization & Setup",
+    description:
+      "Once planning is complete, we mobilize our experienced crews and equipment to the jobsite. Our field supervisors coordinate with all stakeholders, establish safety protocols, secure necessary permits, and ensure every clearance is in place before HDD drilling or utility work begins.",
+  },
+  {
+    number: "03",
+    icon: "precision_manufacturing",
+    title: "Execution & Production",
+    description:
+      "Our field crews execute the project with precision — whether it involves horizontal directional drilling, fiber optic conduit installation, or underground utility support. Daily production reports, real-time communication, and on-site oversight keep every stakeholder informed and the project on schedule.",
+  },
+  {
+    number: "04",
+    icon: "verified",
+    title: "Quality Assurance & Handoff",
+    description:
+      "Before project completion, we conduct thorough quality inspections and compile as-built documentation. Every deliverable is verified against client specifications and industry standards, providing a clean handoff with full project records and sign-off documentation.",
+  },
+];
+
+export default function OurProcess() {
+  return (
+    <section
+      id="process"
+      aria-labelledby="process-heading"
+      className="py-32 px-8 bg-surface-container-low relative overflow-hidden"
+    >
+      {/* Background image */}
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVsV5vbHFbpA6K8UjTbwqveNdS8eYEqDgjKCfYyRKkeVcrHGzpoPfL0ZSzjNvWIDVkz5wN2B4MjXw7CkN3m3ACUf0fEoYEOUtCXZCfkW3icCmTvxTIm0aRfAp_uFVpFnoh8NG5F_dIRv_7XY_cp_oBk7smP_2j8BJqS9Fd5yFXpF6ScK-Zs_IyFm441PJ7xVynUqsJp5EEA5lXttkUMbl9b0STd_fCSYSKAXSRgcf-3BEdmVcfp1lsx3UPlSCFhd6IhwZLBkaSL_S0"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover opacity-[0.04] grayscale mix-blend-luminosity"
+        loading="lazy"
+        width={1920}
+        height={1080}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-container-low via-surface-container-low/90 to-surface-container-low" />
+
+      <div className="container mx-auto relative z-10">
+        {/* Two-column header with image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="uppercase tracking-[0.2em] text-primary-fixed-dim font-bold mb-4 block text-xs">
+              How We Work
+            </span>
+            <h2
+              id="process-heading"
+              className="text-5xl font-extrabold text-on-surface uppercase tracking-tighter mb-4"
+            >
+              Our Process
+            </h2>
+            <div className="amber-bar" aria-hidden="true" />
+            <p className="text-on-surface-variant text-lg leading-relaxed mt-6">
+              Every successful underground construction project follows a proven
+              workflow. At HD Global Group, our four-phase approach ensures your
+              HDD drilling, fiber optic, or utility project is planned
+              meticulously, executed safely, and delivered on time with full
+              documentation and quality assurance at every stage. This structured
+              methodology has been refined over hundreds of completed projects
+              and allows us to maintain consistent production rates, minimize
+              costly change orders, and keep all stakeholders informed from
+              mobilization through final closeout. Whether your project involves
+              a single bore or a multi-mile underground infrastructure build,
+              our process scales to match the complexity and demands of the work.
+            </p>
+          </motion.div>
+
+          {/* Process image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="hidden lg:block"
+          >
+            <div className="rounded-2xl overflow-hidden relative group h-full">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwDxGrwcvj5tkoae8hMP-uKhHaDgna1NbNB-KozEwlhbhXraal7TgrV1QXWuoyjA9b6Ol_-jVroSZPCFB1-EWhdH2n6MmY5iU2VdJ6UDVGRPLzEkkLFvZp7VvPcYq__BUtMJq8uPvMDCUIF6xth3CKGjzVKHmm6RfCASjHQ2k8Xkhva7Ddm4FCCBt-oLCzbS-uIz4Fq9h4WdjNSF7Vr3vdjIAYtWC9rOz-lha_WoOCufivV5JgjgSnQZ7Cp1ShpzV8MQvvjCxVvJKJ"
+                alt="Underground utility infrastructure and pipeline installation work on an active construction site"
+                className="w-full h-full object-cover brightness-75 contrast-110 group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+                width={700}
+                height={500}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 via-transparent to-surface-container-low/40" />
+              <div className="absolute inset-0 bg-primary-container/5 mix-blend-overlay" />
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Process Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {steps.map((step, i) => (
+            <motion.div
+              key={step.number}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: i * 0.12 }}
+              className="relative"
+            >
+              {/* Connector line */}
+              {i < steps.length - 1 && (
+                <div
+                  className="hidden lg:block absolute top-10 left-full w-full h-[1px] bg-gradient-to-r from-primary-container/20 to-transparent z-0"
+                  aria-hidden="true"
+                />
+              )}
+
+              <div className="glass-card rounded-xl p-8 h-full relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <span
+                    className="material-symbols-outlined text-primary-container text-3xl"
+                    aria-hidden="true"
+                  >
+                    {step.icon}
+                  </span>
+                  <span className="text-4xl font-black text-primary-container/10 tracking-tight">
+                    {step.number}
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-on-surface mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-on-surface-variant/70 text-sm leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
