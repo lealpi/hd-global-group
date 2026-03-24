@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const steps = [
   {
@@ -40,17 +41,17 @@ export default function OurProcess() {
       aria-labelledby="process-heading"
       className="py-32 px-8 bg-surface-container-low relative overflow-hidden"
     >
-      {/* Background image */}
-      <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVsV5vbHFbpA6K8UjTbwqveNdS8eYEqDgjKCfYyRKkeVcrHGzpoPfL0ZSzjNvWIDVkz5wN2B4MjXw7CkN3m3ACUf0fEoYEOUtCXZCfkW3icCmTvxTIm0aRfAp_uFVpFnoh8NG5F_dIRv_7XY_cp_oBk7smP_2j8BJqS9Fd5yFXpF6ScK-Zs_IyFm441PJ7xVynUqsJp5EEA5lXttkUMbl9b0STd_fCSYSKAXSRgcf-3BEdmVcfp1lsx3UPlSCFhd6IhwZLBkaSL_S0"
+      {/* Background texture */}
+      <Image
+        src="/images/texture-dark.jpg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover opacity-[0.04] grayscale mix-blend-luminosity"
+        fill
+        className="object-cover opacity-[0.06] grayscale mix-blend-luminosity"
         loading="lazy"
-        width={1920}
-        height={1080}
+        quality={60}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-surface-container-low via-surface-container-low/90 to-surface-container-low" />
+      <div className="absolute inset-0 bg-gradient-to-b from-surface-container-low via-surface-container-low/95 to-surface-container-low" />
 
       <div className="container mx-auto relative z-10">
         {/* Two-column header with image */}
@@ -94,14 +95,14 @@ export default function OurProcess() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="hidden lg:block"
           >
-            <div className="rounded-2xl overflow-hidden relative group h-full">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwDxGrwcvj5tkoae8hMP-uKhHaDgna1NbNB-KozEwlhbhXraal7TgrV1QXWuoyjA9b6Ol_-jVroSZPCFB1-EWhdH2n6MmY5iU2VdJ6UDVGRPLzEkkLFvZp7VvPcYq__BUtMJq8uPvMDCUIF6xth3CKGjzVKHmm6RfCASjHQ2k8Xkhva7Ddm4FCCBt-oLCzbS-uIz4Fq9h4WdjNSF7Vr3vdjIAYtWC9rOz-lha_WoOCufivV5JgjgSnQZ7Cp1ShpzV8MQvvjCxVvJKJ"
-                alt="Underground utility infrastructure and pipeline installation work on an active construction site"
-                className="w-full h-full object-cover brightness-75 contrast-110 group-hover:scale-105 transition-transform duration-700"
+            <div className="rounded-2xl overflow-hidden relative group h-full min-h-[350px]">
+              <Image
+                src="/images/process-site.jpg"
+                alt="Anchor boring rig performing directional drilling operations at underground construction site"
+                fill
+                className="object-cover brightness-75 contrast-110 group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
-                width={700}
-                height={500}
+                quality={80}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 via-transparent to-surface-container-low/40" />
               <div className="absolute inset-0 bg-primary-container/5 mix-blend-overlay" />

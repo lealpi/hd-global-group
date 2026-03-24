@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const differentiators = [
   {
@@ -117,13 +118,13 @@ export default function WhyChooseUs() {
             className="relative hidden lg:block"
           >
             <div className="aspect-square bg-surface-container-highest rounded-2xl overflow-hidden relative group">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQp7YLptA3ON_kLWY8HvwCX2685eFFSz5azYNXeKrHUgJ-0EQTcWBrlOIpHefVAd4Owuc3MvlRIgdPfJDR6-GlDq3tgu3qsjYBPG66fhcGpI3_hdwJ0g5KtRoRl5_LGPWbaLo4szj7Aei13_uDPYjhZOcnk-jjM2zXFn1GdN1wyJIlcj4GyFZ_nwBGV8mb1lilmSmahuGf2aw44LyvAWxnwA3x0Q8Cm927fAzFRP49JlvHIpL1TQh-AI7AgoYyD0O3S9JTn5yp_2VE"
-                alt="Construction worker in high-visibility gear operating heavy machinery on a drill site"
-                className="w-full h-full object-cover contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-1000"
+              <Image
+                src="/images/about-site.jpg"
+                alt="Active underground construction site showing HD Global Group heavy equipment operations from aerial view"
+                fill
+                className="object-cover contrast-125 brightness-75 group-hover:scale-105 transition-transform duration-1000"
                 loading="lazy"
-                width={600}
-                height={600}
+                quality={80}
               />
               <div className="absolute inset-0 bg-primary-container/10 mix-blend-overlay" />
               <div className="absolute inset-0 bg-gradient-to-t from-surface-dim/80 to-transparent" />

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 const stats = [
   { value: 500, suffix: "+", label: "Projects Completed" },
@@ -78,15 +79,16 @@ export default function About() {
               </h2>
               <div className="amber-bar mb-10" aria-hidden="true" />
 
-              {/* Drilling image */}
+              {/* Crew image */}
               <div className="rounded-2xl overflow-hidden relative group">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4iXt2bCyBV0756efzZSAfddJlobrDP8jtoDZC_HWQf039DqMa7a3DJ6Pxkxb98LKcZnw-_WUXcV2GxjzO37nrNyxIkPvdVQy7j5oBS-QswDDbJ-NHxNx7dnbkcYUFwyzf4vMbf26R3Yk_KcexIyMo9iR8KszMEqHhbzIIzCiWzsCUwAgr1o_3xiP4tzaVGPOIDnNbNfFh4yDyQZjqLEi_orLIcUwkf49PvYzH4yeOMAe_51_QepmoxYA1iSs-b09OJgNb4u-umLv5"
-                  alt="Active HDD drilling operation at a directional drilling entry point on a construction site"
-                  className="w-full h-full object-cover aspect-[4/3] brightness-90 contrast-110 group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
+                <Image
+                  src="/images/about-crew.jpg"
+                  alt="HD Global Group experienced construction crew members in safety equipment at project site"
                   width={700}
-                  height={525}
+                  height={467}
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  quality={80}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-dim/60 to-transparent" />
                 <div className="absolute inset-0 bg-primary-container/5 mix-blend-overlay" />

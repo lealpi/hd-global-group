@@ -50,7 +50,7 @@ body {
 
 /* Grain texture overlay */
 .grain-texture {
-  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJBa-UVM8jblUm8RSV0BJLTA42Y0Bx5vhZeivrghbCeQaFUsJOe0qCcg6JKyDHkzGwxoNfxJDgYH-e09JTx3xd2xRujGYKNqr3DFPM9bPvO5slMOkb16j5699665nhw3BPe3-L9qlKIIWJ2eT1w94_rYzbndGtvJjHx2j-DWxJkyz6BnNmC78FuzkA-icGT5Q5XRTe3s4nXEBpQHWu19bUClM5K3ahGtkjD567SE8HA-1IeALGVBnvsjSed0wWJHFIdSiZ-suu5_KE");
+  background-image: url("/images/texture-dark.jpg");
   opacity: 0.03;
   pointer-events: none;
 }

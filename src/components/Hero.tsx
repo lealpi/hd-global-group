@@ -1,26 +1,30 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
+  const { scrollY } = useScroll();
+  const heroY = useTransform(scrollY, [0, 500], [0, 150]);
+
   return (
     <section
       id="hero"
       aria-labelledby="hero-heading"
       className="relative min-h-screen flex items-center overflow-hidden bg-surface-container-lowest"
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVsV5vbHFbpA6K8UjTbwqveNdS8eYEqDgjKCfYyRKkeVcrHGzpoPfL0ZSzjNvWIDVkz5wN2B4MjXw7CkN3m3ACUf0fEoYEOUtCXZCfkW3icCmTvxTIm0aRfAp_uFVpFnoh8NG5F_dIRv_7XY_cp_oBk7smP_2j8BJqS9Fd5yFXpF6ScK-Zs_IyFm441PJ7xVynUqsJp5EEA5lXttkUMbl9b0STd_fCSYSKAXSRgcf-3BEdmVcfp1lsx3UPlSCFhd6IhwZLBkaSL_S0"
-          alt="Powerful horizontal directional drilling HDD rig at sunset on a construction site with cinematic lighting"
-          className="w-full h-full object-cover mix-blend-luminosity brightness-50 contrast-125"
-          loading="eager"
-          width={1920}
-          height={1080}
+      {/* Background Image with Parallax */}
+      <motion.div className="absolute inset-0 z-0" style={{ y: heroY }}>
+        <Image
+          src="/images/hero-construction.jpg"
+          alt="Horizontal directional drilling rig and equipment set up for trenchless underground utility installation at residential construction site"
+          fill
+          className="object-cover"
+          priority
+          quality={85}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent" />
-      </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-surface-dim/70 via-surface-dim/50 to-surface-dim/90" />
+      </motion.div>
 
       {/* Grain texture */}
       <div className="grain-texture absolute inset-0" aria-hidden="true" />
