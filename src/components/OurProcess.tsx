@@ -93,9 +93,8 @@ export default function OurProcess() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="hidden lg:block"
           >
-            <div className="rounded-2xl overflow-hidden relative group h-full min-h-[350px]">
+            <div className="rounded-2xl overflow-hidden relative group h-[300px] sm:h-[350px] lg:h-full lg:min-h-[350px]">
               <Image
                 src="/images/process-site.jpg"
                 alt="HD Global Group field worker using Radiodetection F5+ utility locator on active horizontal directional drilling jobsite"

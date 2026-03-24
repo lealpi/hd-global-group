@@ -115,9 +115,9 @@ export default function WhyChooseUs() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative hidden lg:block"
+            className="relative"
           >
-            <div className="aspect-square bg-surface-container-highest rounded-2xl overflow-hidden relative group">
+            <div className="aspect-[4/3] lg:aspect-square bg-surface-container-highest rounded-2xl overflow-hidden relative group">
               <Image
                 src="/images/about-site.jpg"
                 alt="Active underground construction site showing HD Global Group heavy equipment operations from aerial view"
@@ -131,7 +131,7 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Floating testimonial card */}
-            <div className="absolute -bottom-10 -left-10 bg-surface-variant/80 backdrop-blur-2xl p-8 rounded-xl border border-outline-variant/30 max-w-xs shadow-2xl">
+            <div className="hidden lg:block absolute -bottom-10 -left-10 bg-surface-variant/80 backdrop-blur-2xl p-8 rounded-xl border border-outline-variant/30 max-w-xs shadow-2xl">
               <p className="text-on-surface italic font-medium leading-relaxed">
                 &ldquo;HD Global&apos;s precision in HDD is the benchmark for
                 the industry. They handle complexity with silence and
