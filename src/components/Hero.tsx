@@ -17,7 +17,7 @@ export default function Hero() {
       <motion.div className="absolute inset-0 z-0" style={{ y: heroY }}>
         <Image
           src="/images/hero-construction.jpg"
-          alt="Horizontal directional drilling rig and equipment set up for trenchless underground utility installation at residential construction site"
+          alt="HD Global Group heavy excavator machinery at active underground construction site with dramatic sky"
           fill
           className="object-cover"
           priority
